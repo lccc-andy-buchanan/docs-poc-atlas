@@ -1,6 +1,6 @@
 services:
   docs-preview:
-    image: ghcr.io/lccc-andy-buchanan/docs-poc-renderer:v0.1.0
+    image: ghcr.io/lccc-andy-buchanan/docs-poc-renderer:v0.1.1
     command: [docs-renderer, preview, --override, atlas=/overrides/atlas]
     ports: ["4321:4321"]
     volumes:
