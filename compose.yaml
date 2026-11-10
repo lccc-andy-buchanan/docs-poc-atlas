@@ -1,0 +1,12 @@
+services:
+  docs-preview:
+    image: ghcr.io/lccc-andy-buchanan/docs-poc-renderer:v0.1.0
+    command: [docs-renderer, preview, --override, atlas=/overrides/atlas]
+    ports: ["4321:4321"]
+    volumes:
+      - ./docs:/overrides/atlas:ro
+      - docs-cache:/cache/docs-renderer
+    environment:
+      CHOKIDAR_USEPOLLING: "true"
+volumes:
+  docs-cache:
