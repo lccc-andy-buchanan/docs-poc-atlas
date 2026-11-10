@@ -9,3 +9,9 @@ Atlas proposed change: the amber otter example demonstrates a contributor previe
 PR follow-up: the bronze heron appears only after a new deployment.
 
 [Return to the overview](index.md).
+
+## Local contributor preview
+
+This local edit appears in the full documentation site.
+
+Live update: the silver fox is ready for review.
